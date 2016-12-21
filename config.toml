@@ -36,6 +36,7 @@ googleAnalytics = ""
 			services  = "Services"
 			portfolio = "Speaking"
 			contact   = "Contact"
+      blog      = "Blog"
 
 
 	# Hero section
@@ -47,34 +48,36 @@ googleAnalytics = ""
 
 	# About section
 	[params.about]
-		headline    = "We've got what you need!"
-		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Get started!"
-
+		headline    = "Who the heck is this guy?"
+		description = "I'm a senior software developer working for Adobe where I contribute to open source projects like [Apache Cordova](https://cordova.apache.org/) and [Adobe PhoneGap](http://phonegap.com/). I've been lucky enough to speak at a number of conferences and meetups who's slide's and video's are archived here. As well, I'm one of the co-organizers of the ever popular [Ottawa JS Meetup](http://ottawajs.org/)."
 
 	# Service section
 	[params.services]
-		headline = "Contact Me"
+		headline = "Projects"
 
     [[params.services.list]]
-      icon = "fa-twitter"
-      title = "Twitter"
-      description = "Our templates are updated regularly so they don't break."
+      #icon = "fa-twitter"
+      title = "Push Plugin"
+      description = "Receive push notifications"
+      url = "https://github.com/phonegap/phonegap-plugin-push"
 
     [[params.services.list]]
-			icon = "fa-github"
-			title = "GitHub"
-			description = "You can use this theme as is, or you can make changes!"
+			#icon = "fa-github"
+			title = "Content Sync"
+			description = "Download and cache remotely hosted content"
+      url = "https://github.com/phonegap/phonegap-plugin-contentsync"
 
 		[[params.services.list]]
-      icon = "fa-instagram"
-      title = "Instagram"
-      description = "We update dependencies to keep things fresh."
+      #icon = "fa-instagram"
+      title = "Image Editor"
+      description = "Photo/Image editing tools"
+      url = "https://github.com/CreativeSDK/phonegap-plugin-csdk-image-editor"
 
     [[params.services.list]]
-      icon = "fa-heart"
-      title = "Made with Love"
-      description = "You have to make your websites with love these days!"
+      #icon = "fa-heart"
+      title = "Speech Recognition"
+      description = "Mobile speech recognition"
+      url = "https://github.com/macdonst/SpeechRecognitionPlugin"
 
 
     # Portfolio modals
@@ -85,12 +88,12 @@ googleAnalytics = ""
         buttonText = "Close"
 
     # Aside section
-	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
-
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
+#	[params.aside]
+#		headline = "Get the Creative Theme for Hugo"
+#
+#		[params.aside.button]
+#			text = "Download now"
+#			link = "//github.com/digitalcraftsman/hugo-creative-theme"
 
 	# Contact section
 	[params.contact]
