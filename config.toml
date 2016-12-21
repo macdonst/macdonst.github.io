@@ -54,27 +54,27 @@ googleAnalytics = ""
 
 	# Service section
 	[params.services]
-		headline = "At your service"
+		headline = "Contact Me"
 
-        [[params.services.list]]
-            icon = "fa-diamond"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
+    [[params.services.list]]
+      icon = "fa-twitter"
+      title = "Twitter"
+      description = "Our templates are updated regularly so they don't break."
 
-        [[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Ready to Ship"
+    [[params.services.list]]
+			icon = "fa-github"
+			title = "GitHub"
 			description = "You can use this theme as is, or you can make changes!"
 
 		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
+      icon = "fa-instagram"
+      title = "Instagram"
+      description = "We update dependencies to keep things fresh."
 
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
+    [[params.services.list]]
+      icon = "fa-heart"
+      title = "Made with Love"
+      description = "You have to make your websites with love these days!"
 
 
     # Portfolio modals
@@ -94,11 +94,12 @@ googleAnalytics = ""
 
 	# Contact section
 	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
-    twitter = "@macdonst"
+		headline = "Contact Me"
+		description = "Feel free to get in touch with me by one of these methods if you need to ask me a question or arrange for me to speak at an event."
+    twitter = "macdonst"
+    github = "macdonst"
+    instagram = "macdonst"
+    linkedin = "simonmacdonald"
 
 	# Google Maps section
 	# [params.location]
