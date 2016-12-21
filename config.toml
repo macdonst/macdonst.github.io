@@ -38,6 +38,9 @@ googleAnalytics = ""
 			contact   = "Contact"
       blog      = "Blog"
 
+  # blog
+  [params.blog]
+    url = "http://simonmacdonald.blogspot.ca/"
 
 	# Hero section
 	[params.hero]
