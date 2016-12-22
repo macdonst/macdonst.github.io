@@ -1,0 +1,4 @@
+weight: 4
+name: "Speech Recognition"
+description: "Mobile speech recognition"
+url: "https://github.com/macdonst/SpeechRecognitionPlugin"

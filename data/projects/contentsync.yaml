@@ -1,0 +1,4 @@
+weight: 2
+name: "Content Sync"
+description: "Download and cache remotely hosted content"
+url: "https://github.com/phonegap/phonegap-plugin-contentsync"

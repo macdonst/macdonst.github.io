@@ -1,114 +1,128 @@
 title = "Simon MacDonald"
 languageCode = "en-us"
 baseURL = "https://macdonst.github.io/"
-theme = "hugo-creative-theme"
+theme = "hugo-universal-theme"
+
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 
+# Define the number of posts per page
+paginate = 10
+
 [params]
+    viewMorePostLink = "/blog/"
+    author = "DevCows"
 
-	# You can use Markdown syntax for urls [text](//url.to/source) for
-	# most longer texts.
+    # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
+    style = "violet"
 
-	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    #
+    # Enable the contact form by entering your Formspree.io email
+    email = "your@email.com"
 
-	# All projects of the portfolio are defined in their own files.
-	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
-	# folder into the 'data' directory at the root of this Hugo site.
-	# For more information take a look at the README.
+    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    date_format = "2006-01-02"
+    logo = "img/logo.png"
+    address = """<p><strong>Universal Ltd.</strong>
+        <br>13/25 New Avenue
+        <br>Newtown upon River
+        <br>45Y 73J
+        <br>England
+        <br>
+        <strong>Great Britain</strong>
+      </p>
+      """
+    latitude = "-12.043333"
+    longitude = "-77.028333"
 
-	# To provide some metadata for search engines feel free to add some
-	# information about you and your website.
-	name = "Simon MacDonald"
-	description = "Your description"
+[Permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
 
-	# The path must be relative to the static folder
-	favicon = "favicon.ico"
+[[params.menu]]
+    name = "Home"
+    url  = "/"
+    weight = 1
 
+[[params.menu]]
+    name = "Blog"
+    url  = "http://simonmacdonald.blogspot.ca/"
+    weight = 2
 
-	# Navigation
-	[params.navigation]
-		brand = "Simon MacDonald"
+[[params.menu]]
+    name = "Speaking"
+    url  = "/speaking/"
+    weight = 3
 
-		[params.navigation.links]
-			about     = "About"
-			projects  = "Projects"
-			portfolio = "Speaking"
-			contact   = "Contact"
-      blog      = "Blog"
+[[params.menu]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 4
 
-  # blog
-  [params.blog]
-    url = "http://simonmacdonald.blogspot.ca/"
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
 
-	# Hero section
-	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Simon MacDonald"
-		subtitle   = "Father, Software Engineer, Comic Enthusiast and Coffee Lover"
+[params.carousel]
+    enable = true
+    # All carousel items are defined in their own files. You can find example items
+    # at 'exampleSite/data/carousel'.
+    # For more informtion take a look at the README.
 
+[params.features]
+    enable = true
+    # All features are defined in their own files. You can find example items
+    # at 'exampleSite/data/features'.
+    # For more informtion take a look at the README.
 
-	# About section
-	[params.about]
-		headline    = "Who the heck is this guy?"
-		description = "I'm a senior software developer working for Adobe where I contribute to open source projects like [Apache Cordova](https://cordova.apache.org/) and [Adobe PhoneGap](http://phonegap.com/). I've been lucky enough to speak at a number of conferences and meetups who's slide's and video's are archived here. As well, I'm one of the co-organizers of the ever popular [Ottawa JS Meetup](http://ottawajs.org/)."
+[params.testimonials]
+    enable = false
+    # All testimonials are defined in their own files. You can find example items
+    # at 'exampleSite/data/testimonials'.
+    # For more informtion take a look at the README.
+    title = "Testimonials"
+    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
-	# Service section
-	[params.projects]
-		headline = "Projects"
+[params.see_more]
+    enable = true
+    icon = ""
+    title = "Who the heck is this guy?"
+    subtitle = "I’m a senior software developer working for Adobe where I contribute to open source projects like Apache Cordova and Adobe PhoneGap. I’ve been lucky enough to speak at a number of conferences and meetups who’s slide’s and video’s are archived here. As well, I’m one of the co-organizers of the ever popular Ottawa JS Meetup."
+    link_url = ""
+    link_text = ""
 
-    [[params.projects.list]]
-      #icon = "fa-twitter"
-      title = "Push Plugin"
-      description = "Receive push notifications"
-      url = "https://github.com/phonegap/phonegap-plugin-push"
+[params.clients]
+    enable = false
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title = "Projects"
+    subtitle = ""
 
-    [[params.projects.list]]
-			#icon = "fa-github"
-			title = "Content Sync"
-			description = "Download and cache remotely hosted content"
-      url = "https://github.com/phonegap/phonegap-plugin-contentsync"
+[params.projects]
+    enable = true
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title = "Projects"
+    subtitle = ""
 
-		[[params.projects.list]]
-      #icon = "fa-instagram"
-      title = "Image Editor"
-      description = "Photo/Image editing tools"
-      url = "https://github.com/CreativeSDK/phonegap-plugin-csdk-image-editor"
-
-    [[params.projects.list]]
-      #icon = "fa-heart"
-      title = "Speech Recognition"
-      description = "Mobile speech recognition"
-      url = "https://github.com/macdonst/SpeechRecognitionPlugin"
-
-
-    # Portfolio modals
-	[params.portfolio.modal]
-        client = "Client"
-        date = "Date"
-        category = "Category"
-        buttonText = "Close"
-
-    # Aside section
-#	[params.aside]
-#		headline = "Get the Creative Theme for Hugo"
-#
-#		[params.aside.button]
-#			text = "Download now"
-#			link = "//github.com/digitalcraftsman/hugo-creative-theme"
-
-	# Contact section
-	[params.contact]
-		headline = "Contact Me"
-		description = "Feel free to get in touch with me by one of these methods if you need to ask me a question or arrange for me to speak at an event."
-    twitter = "macdonst"
-    github = "macdonst"
-    instagram = "macdonst"
-    linkedin = "simonmacdonald"
-
-	# Google Maps section
-	# [params.location]
-	# 	latitude  = "34.007850"
-	# 	longitude = "-118.499305"
-	# 	maps_api_key = ""
+[params.recent_posts]
+    enable = false
+    title = "From our blog"
+    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
